@@ -1,7 +1,6 @@
 # Report
 
-## Problem Presentation {#problem-presentation .unnumbered}
-
+## Problem Presentation
 This assignment evaluates binary sentiment classification on book
 reviews. Given a review's text as input, the model assigns a positive or
 negative sentiment as output. The dataset consists of 12,000 raw Amazon

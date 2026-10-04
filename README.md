@@ -57,13 +57,13 @@ to accurately represent reviews with mixed sentiment.
 The dataset contains 12,000 instances. The class distribution reveals a
 notable imbalance among review sentiments.
 
-  ------------- ------
-  (12000, 11)   
-  sentiment     
-  positive      6000
-  negative      4000
-  neutral       2000
-  ------------- ------
+| (12000, 11) |      |
+|-------------|------|
+| sentiment   |      |
+| positive    | 6000 |
+| negative    | 4000 |
+| neutral     | 2000 |
+
 
 The relatively small proportion of neutral reviews allows the binary
 model to yield an apparently satisfactory classification performance
@@ -71,15 +71,15 @@ while ignoring this category.
 
 ## Forced Binary Model
 
-  --------------- ----------- -------- ---------- ---------
-                  Precision   Recall   F1-Score   Support
-  Negative        0.65        0.88     0.75       1200
-  Neutral         0.00        0.00     0.00       600
-  Positive        0.79        0.87     0.82       1800
-  Accuracy                             0.73       3600
-  Macro Avg.      0.48        0.58     0.52       3600
-  Weighted Avg.   0.61        0.73     0.66       3600
-  --------------- ----------- -------- ---------- ---------
+|               | Precision | Recall | F1-Score | Support |
+|---------------|-----------|--------|----------|---------|
+| Negative      | 0.65      | 0.88   | 0.75     | 1200    |
+| Neutral       | 0.00      | 0.00   | 0.00     | 600     |
+| Positive      | 0.79      | 0.87   | 0.82     | 1800    |
+| Accuracy      |           |        | 0.73     | 3600    |
+| Macro Avg.    | 0.48      | 0.58   | 0.52     | 3600    |
+| Weighted Avg. | 0.61      | 0.73   | 0.66     | 3600    |
+
 
 The neutral class yields precision, recall, and F1-score values of 0.00
 because the model was not trained on neutral instances, resulting in an
@@ -91,15 +91,15 @@ for all three classes equally, reflecting the true drop in performance.
 
 ## Three-Class Model
 
-  --------------- ----------- -------- ---------- ---------
-                  Precision   Recall   F1-Score   Support
-  Negative        0.70        0.82     0.76       1200
-  Neutral         0.38        0.27     0.31       600
-  Positive        0.82        0.81     0.82       1800
-  Accuracy                             0.72       3600
-  Macro Avg.      0.64        0.63     0.63       3600
-  Weighted Avg.   0.71        0.72     0.71       3600
-  --------------- ----------- -------- ---------- ---------
+|               | Precision | Recall | F1-Score | Support |
+|---------------|-----------|--------|----------|---------|
+| Negative      | 0.70      | 0.82   | 0.76     | 1200    |
+| Neutral       | 0.38      | 0.27   | 0.31     | 600     |
+| Positive      | 0.82      | 0.81   | 0.82     | 1800    |
+| Accuracy      |           |        | 0.72     | 3600    |
+| Macro Avg.    | 0.64      | 0.63   | 0.63     | 3600    |
+| Weighted Avg. | 0.71      | 0.72   | 0.71     | 3600    |
+
 
 While overall accuracy slightly decreased due to minor drops in positive
 and negative scores, the macro average improved from 0.52 to 0.63,

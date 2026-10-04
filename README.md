@@ -120,7 +120,7 @@ model to associate those terms directly with positive or negative
 sentiment. Consequently, a key future improvement would involve
 filtering out proper nouns during feature extraction.
 
-![image](./imagenes/wordGraph.png)
+![image](./wordGraph.png)
 
 # Declarative Use of LLM
 
